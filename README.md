@@ -1,5 +1,6 @@
 ### This is still in progress, it can break at anytime.
 
+Currently supports String, Boolean, boolean, int, Integer.
 
 ## Usage:
 
@@ -45,6 +46,7 @@ Stirng hello;
 </code></pre>
 
 * <b>OnCreate Method</b>
+
 <pre><code>
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -57,9 +59,11 @@ protected void onCreate(Bundle savedInstanceState) {
 </code></pre>
 
 * <b>OnSaveInstanceState Method</b>
+
 <pre><code>
 @Override
 protected void onSaveInstanceState(Bundle outState) {
 	super.onSaveInstanceState(outState);
-	}
+	Retainer.save(this, outState);
+}
 </code></pre>
