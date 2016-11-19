@@ -40,6 +40,7 @@ dependencies {
 ## Sample
 
 * In your activity code
+
 <pre><code>
 @SaveInstance
 Stirng hello;
