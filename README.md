@@ -43,7 +43,7 @@ dependencies {
 
 <pre><code>
 @SaveInstance
-Stirng hello;
+String hello;
 </code></pre>
 
 * <b>OnCreate Method</b>
