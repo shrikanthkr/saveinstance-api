@@ -36,6 +36,7 @@ public class Retainer {
             Object callerProxyInstance = obj.newInstance(caller);
             Method save = callerProxyInstance.getClass().getDeclaredMethod("load", outState.getClass());
             save.invoke(callerProxyInstance, outState);
+            
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
